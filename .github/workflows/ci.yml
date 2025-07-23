@@ -8,3 +8,4 @@ jobs:
     runs-on: macos-14
     steps:
       - run: xcode-select --print-path
+      - run: python find_sdk.py 15 --print_sdk_path

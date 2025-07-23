@@ -8,5 +8,8 @@ jobs:
     runs-on: macos-14
     steps:
       - uses: actions/checkout@v4
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: 16
       - run: xcode-select --print-path
       - run: python find_sdk.py 15 --print_sdk_path

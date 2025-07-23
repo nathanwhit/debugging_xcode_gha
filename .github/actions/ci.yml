@@ -1,0 +1,10 @@
+# .github/workflows/basic.yml
+name: Basic Workflow
+
+on: push
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - run: xcode-select --print-path
